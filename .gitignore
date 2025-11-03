@@ -48,4 +48,8 @@ prisma/migrations/
 # Claude Code hooks
 .claude/hooks/node_modules/
 .claude/hooks/state/
+.claude/tsc-cache/
 .claude/settings.local.json
+
+# Dev docs (optional - comment out if you want to commit them)
+# dev/active/*/
