@@ -1,0 +1,50 @@
+{
+  "skill-developer": {
+    "type": "domain",
+    "enforcement": "suggest",
+    "priority": "high",
+    "promptTriggers": {
+      "keywords": [
+        "skill",
+        "skills",
+        "create skill",
+        "add skill",
+        "new skill",
+        "skill-rules",
+        "skill-rules.json",
+        "hook",
+        "hooks",
+        "trigger",
+        "activation",
+        "auto-activation",
+        "skill activation",
+        "YAML frontmatter",
+        "progressive disclosure",
+        "500-line rule",
+        "创建技能",
+        "添加技能",
+        "新技能",
+        "技能规则",
+        "钩子",
+        "触发器",
+        "激活",
+        "自动激活"
+      ],
+      "intentPatterns": [
+        "(create|add|make|build|implement).*?(skill|hook)",
+        "(modify|update|change|edit).*?(skill-rules|activation)",
+        "(how|why|what).*?(skill|hook).*?(work|activate|trigger)",
+        "(debug|fix|troubleshoot).*?(skill|hook|activation)",
+        "skill.*?(not|doesn't|won't).*?(trigger|activate|work)"
+      ]
+    },
+    "fileTriggers": {
+      "pathPatterns": [
+        ".claude/skills/**/*.md",
+        ".claude/skills/skill-rules.json",
+        ".claude/hooks/**/*"
+      ],
+      "contentPatterns": []
+    }
+  }
+}

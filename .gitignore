@@ -44,3 +44,8 @@ next-env.d.ts
 # Prisma
 prisma/migrations/
 *.db-wal
+
+# Claude Code hooks
+.claude/hooks/node_modules/
+.claude/hooks/state/
+.claude/settings.local.json
